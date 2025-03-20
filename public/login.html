@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: 0 auto; padding: 20px; }
+    label, input, button { display: block; width: 100%; margin-bottom: 10px; }
+    button { background: #4CAF50; color: white; border: none; padding: 10px; cursor: pointer; }
+    button:hover { background: #45a049; }
+    a { text-decoration: none; color: blue; }
+  </style>
+</head>
+<body>
+
+  <h2>Login</h2>
+  <form action="/login" method="POST">
+    <label>Email:</label>
+    <input type="email" name="email" required />
+
+    <label>Password:</label>
+    <input type="password" name="password" required />
+
+    <button type="submit">Login</button>
+  </form>
+
+  <p>Don't have an account? <a href="/">Register here</a></p>
+
+</body>
+</html>
